@@ -1,4 +1,4 @@
-# mkdocs-docx-content-filter
+# mkdocs-word-filter
 
 Strips extra content from markdown files that was added e.g. for converting the files to docx using pandoc
 
@@ -16,7 +16,7 @@ Stripped content can include for example:
 ## Install
 
 ```bash
-python -m pip install mkdocs-line-filter
+python -m pip install mkdocs-word-filter
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ Active the plugin in `mkdocs.yml`. You can specify the ignorable strings as a li
 ```yaml
 plugins:
     - search 
-    - markdown-filter-docx-content:
+    - mkdocs-word-filter:
         filter-lines-with:
             - \toc
             - \newpage

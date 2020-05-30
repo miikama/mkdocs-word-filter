@@ -5,11 +5,12 @@ with open("README.md", "r") as fh:
 
 setup(
     name='mkdocs-word-filter',
-    version='0.1.0',
+    version='0.1.1',
     description='A MkDocs plugin to filter extra content that was to markdown documents for e.g. formatting docx files.',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     keywords='mkdocs markdown word filter',
-    url='',
+    url='https://github.com/miikama/mkdocs-word-filter',
     author='Miika Mäkelä',
     author_email='makelanmiika@gmail.com',
     license='MIT',
@@ -28,7 +29,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'mkdocs.plugins': [
-            'markdown-word-filter=mkdocs_word_filter.plugin:ContentFilterPlugin',
+            'mkdocs-word-filter=mkdocs_word_filter.plugin:ContentFilterPlugin',
         ]
     }
 )
